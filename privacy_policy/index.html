@@ -198,6 +198,21 @@
   .link-list li{ display:flex; gap:.5rem; align-items:baseline; }
   .link-list a{ font-weight:600; }
 
+  .legal-links{
+    margin-top:2.6rem; padding-top:2rem; border-top:1px solid var(--panel-border);
+    display:flex; flex-wrap:wrap; gap:.9rem;
+  }
+  .legal-links .btn-link{
+    display:inline-flex; align-items:center; gap:.55rem;
+    padding:.75rem 1.2rem; border-radius:.7rem;
+    background:var(--accent-soft); border:1px solid rgba(244,183,64,0.35);
+    color:var(--accent-strong); text-decoration:none;
+    font-family:'Bricolage Grotesque',sans-serif; font-weight:600; font-size:.92rem;
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .legal-links .btn-link:hover{ background:rgba(244,183,64,0.28); color:var(--accent-strong); border-color:rgba(244,183,64,0.55); }
+  .legal-links .btn-link svg{ width:16px; height:16px; flex:none; }
+
   /* ---------- back to top ---------- */
   .back-to-top{
     position:fixed; right:1.4rem; bottom:1.4rem; z-index:20;
@@ -283,7 +298,7 @@
       <span data-lang-content="de">Fragen zum Datenschutz?</span>
       <span data-lang-content="en" hidden>Questions about privacy?</span>
       <br>
-      <a href="mailto:onsi.studios@gmail.com">onsi.studios@gmail.com</a>
+      <a href="mailto:OnPoy.Studios@gmail.com">OnPoy.Studios@gmail.com</a>
     </div>
   </aside>
 
@@ -299,7 +314,7 @@
           Bayernstraße 33<br>
           30855 Langenhagen<br>
           Deutschland<br>
-          E-Mail: <a href="mailto:onsi.studios@gmail.com">onsi.studios@gmail.com</a>
+          E-Mail: <a href="mailto:OnPoy.Studios@gmail.com">OnPoy.Studios@gmail.com</a>
         </address>
         <p>Nachfolgend informieren wir darüber, welche Daten bei der Nutzung der App verarbeitet werden, zu welchen Zwecken dies geschieht und welche Rechte Nutzer hinsichtlich ihrer personenbezogenen Daten haben.</p>
         </div>
@@ -310,7 +325,7 @@
           Bayernstraße 33<br>
           30855 Langenhagen<br>
           Germany<br>
-          Email: <a href="mailto:onsi.studios@gmail.com">onsi.studios@gmail.com</a>
+          Email: <a href="mailto:OnPoy.Studios@gmail.com">OnPoy.Studios@gmail.com</a>
         </address>
         <p>This Privacy Policy explains what data may be processed when using the app, for what purposes such processing takes place, which third-party services are used, and what rights users have regarding their personal data.</p>
         </div>
@@ -881,7 +896,7 @@
           Bayernstraße 33<br>
           30855 Langenhagen<br>
           Deutschland<br>
-          E-Mail: <a href="mailto:onsi.studios@gmail.com">onsi.studios@gmail.com</a>
+          E-Mail: <a href="mailto:OnPoy.Studios@gmail.com">OnPoy.Studios@gmail.com</a>
         </address>
         </div>
         <div class="lang-body" data-lang-content="en" hidden>
@@ -891,10 +906,23 @@
           Bayernstraße 33<br>
           30855 Langenhagen<br>
           Germany<br>
-          Email: <a href="mailto:onsi.studios@gmail.com">onsi.studios@gmail.com</a>
+          Email: <a href="mailto:OnPoy.Studios@gmail.com">OnPoy.Studios@gmail.com</a>
         </address>
         </div>
       </section>
+
+      <div class="legal-links">
+        <a class="btn-link" href="https://onsistudios.github.io/Trend-or-Flop.github.io/terms-of-service/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h6l4 4v14H8z"/><path d="M14 3v4h4"/><path d="M10 13h6"/><path d="M10 17h6"/></svg>
+          <span data-lang-content="de">Nutzungsbedingungen</span>
+          <span data-lang-content="en" hidden>Terms of Service</span>
+        </a>
+        <a class="btn-link" href="https://onsistudios.github.io/Trend-or-Flop.github.io/legal-notice/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M8 8h8"/><path d="M8 12h8"/><path d="M8 16h5"/></svg>
+          <span data-lang-content="de">Impressum</span>
+          <span data-lang-content="en" hidden>Legal Notice</span>
+        </a>
+      </div>
 
     </div>
   </main>
